@@ -10,13 +10,15 @@ namespace MP_TD.Base
     public class BaseDepot<TEntity, TId>
         where TEntity : BaseEntity<TId>
     {
-        private const string connectionString = "";
+        private const string connectionString = "Server=127.0.0.1;Database=TDM;Uid=root;Pwd=;";
         protected IDatabase Database;
         protected string TableName = typeof(TEntity).Name;
 
         public BaseDepot()
         {
-            Database = new Database(new SqlConnection(connectionString));
+            SqlConnection connection = new SqlConnection(connectionString);
+            connection.Open();
+            Database = new Database(connectionString, DatabaseType.MySQL);
         }
 
         public TEntity GetById(TId id)

@@ -9,6 +9,9 @@ namespace MP_TD.Shared.Services
 {
     public class UnitService : BaseService<Unit, int>
     {
+        public UnitService() : base()
+        {
 
+        }
     }
 }

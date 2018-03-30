@@ -10,6 +10,11 @@ namespace MP_TD.Base
     {
         protected BaseDepot<TEntity, TId> Depot;
 
+        public BaseService()
+        {
+            Depot = new BaseDepot<TEntity, TId>();
+        }
+
         public TEntity GetById(TId id)
         {
             return Depot.GetById(id);

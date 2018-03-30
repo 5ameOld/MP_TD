@@ -15,7 +15,7 @@ namespace MP_TD.Shared.Entities
         public decimal Range { get; set; }
         public decimal Speed { get; set; }
         public decimal Costs { get; set; }
-        public string Armor { get; set; }
+        public decimal Armor { get; set; }
         public decimal Penetration { get; set; }
         public bool AttackTurrets { get; set; }
     }
