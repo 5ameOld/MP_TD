@@ -1,0 +1,10 @@
+D:\Projekte\Unity\MP_TD\MP_TD.App\bin\Debug\MP_TD.App.dll
+D:\Projekte\Unity\MP_TD\MP_TD.App\bin\Debug\MP_TD.App.pdb
+D:\Projekte\Unity\MP_TD\MP_TD.App\obj\Debug\MP_TD.App.dll
+D:\Projekte\Unity\MP_TD\MP_TD.App\obj\Debug\MP_TD.App.pdb
+D:\Projekte\Unity\MP_TD\MP_TD.App\obj\Debug\MP_TD.App.csprojResolveAssemblyReference.cache
+D:\Projekte\Unity\MP_TD\MP_TD.App\bin\Debug\MP_TD.Base.dll
+D:\Projekte\Unity\MP_TD\MP_TD.App\bin\Debug\MP_TD.Shared.dll
+D:\Projekte\Unity\MP_TD\MP_TD.App\bin\Debug\NPoco.dll
+D:\Projekte\Unity\MP_TD\MP_TD.App\bin\Debug\MP_TD.Base.pdb
+D:\Projekte\Unity\MP_TD\MP_TD.App\bin\Debug\MP_TD.Shared.pdb
