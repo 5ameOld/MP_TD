@@ -9,9 +9,5 @@ namespace MP_TD.App.Depots
 {
     public class BuildingDepot : BaseDepot<Building, int>
     {
-        public List<Building> GetAll()
-        {
-            return Database.Fetch<Building>(GetBaseSelectSql());
-        }
     }
 }
