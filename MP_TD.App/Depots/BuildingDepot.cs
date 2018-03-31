@@ -2,11 +2,12 @@
 using MP_TD.Shared.Entities;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace MP_TD.App.Depots
 {
-    public class DamageTypeDepot : BaseDepot<DamageType, string>
+    public class BuildingDepot : BaseDepot<Building, int>
     {
     }
 }
