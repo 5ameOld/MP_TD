@@ -213,10 +213,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 38162257}
-  - component: {fileID: 38162258}
   m_Layer: 0
   m_Name: UI
-  m_TagString: UI
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -235,17 +234,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &38162258
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 38162256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5da319a605057b14cb773e6da6c43795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &70388219
 GameObject:
   m_ObjectHideFlags: 0
@@ -1868,7 +1856,7 @@ GameObject:
   - component: {fileID: 504324735}
   m_Layer: 0
   m_Name: Camera
-  m_TagString: MainCamera
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1986,10 +1974,6 @@ Prefab:
     - target: {fileID: 4362480584434024, guid: 92048b37840203644bf6c83be6d07b3a, type: 2}
       propertyPath: m_RootOrder
       value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1538969306122338, guid: 92048b37840203644bf6c83be6d07b3a, type: 2}
-      propertyPath: m_TagString
-      value: HQ
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 92048b37840203644bf6c83be6d07b3a, type: 2}
@@ -5261,6 +5245,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1314868779}
   m_OnClick:
     m_PersistentCalls:
+<<<<<<< HEAD
       m_Calls:
 <<<<<<< HEAD
       - m_Target: {fileID: 2067630435}
@@ -5278,6 +5263,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+=======
+      m_Calls: []
+>>>>>>> parent of 59d52a5... Building Click
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1314868779
@@ -8138,11 +8126,11 @@ GameObject:
   - component: {fileID: 2067630435}
   m_Layer: 0
   m_Name: HQPanel
-  m_TagString: Panel
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2067630432
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8220,7 +8208,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2102940464}
-  - component: {fileID: 2102940465}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -8242,18 +8229,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 20, y: 50, z: 0}
---- !u!114 &2102940465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2102940463}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b2ca1bcf9e150f4992d9b2698aefa74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UI: {fileID: 38162256}
 --- !u!1 &2132474841
 GameObject:
   m_ObjectHideFlags: 0
