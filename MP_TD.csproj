@@ -312,8 +312,11 @@
     <Compile Include="Assets\RTS_Camera\Scripts\RTS_Camera.cs" />
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\ButtonClick.cs" />
     <Compile Include="Assets\Scripts\EventHandler.cs" />
+=======
+>>>>>>> parent of 59d52a5... Building Click
 =======
 >>>>>>> parent of 59d52a5... Building Click
 =======
