@@ -47,12 +47,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Depots\AbilityDepot.cs" />
+    <Compile Include="Depots\BuildingDepot.cs" />
+    <Compile Include="Depots\BuildingTypeDepot.cs" />
     <Compile Include="Depots\DamageTypeDepot.cs" />
     <Compile Include="Depots\EffectDepot.cs" />
+    <Compile Include="Depots\RessourceDepot.cs" />
     <Compile Include="Depots\UnitDepot.cs" />
+    <Compile Include="Depots\WorkerDepot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\AbilityService.cs" />
+    <Compile Include="Services\BuildingService.cs" />
+    <Compile Include="Services\BuildingTypeService.cs" />
+    <Compile Include="Services\DamageTypeService.cs" />
     <Compile Include="Services\EffectService.cs" />
+    <Compile Include="Services\RessourceService.cs" />
     <Compile Include="Services\UnitService.cs" />
+    <Compile Include="Services\WorkerService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MP_TD.Base\MP_TD.Base.csproj">
