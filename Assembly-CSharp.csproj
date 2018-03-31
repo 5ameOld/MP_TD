@@ -54,11 +54,9 @@
      <Compile Include="Assets\AssetStore\Knight\scripts\rotator.cs" />
      <Compile Include="Assets\AssetStore\Worker\DemoSceneBasicBandit\Scripts\ButtonFunction.cs" />
      <Compile Include="Assets\AssetStore\Worker\DemoSceneBasicBandit\Scripts\MovementCamera.cs" />
-     <Compile Include="Assets\MyCam.cs" />
      <Compile Include="Assets\RTS_Camera\Demo\DemoScene.cs" />
      <Compile Include="Assets\RTS_Camera\Demo\TargetSelector.cs" />
      <Compile Include="Assets\RTS_Camera\Scripts\RTS_Camera.cs" />
-     <Compile Include="Assets\Scripts\ButtonClick.cs" />
      <Compile Include="Assets\Scripts\Scripterino.cs" />
      <None Include="Assets\RTS_Camera\Demo\Projectors\Guidelines.txt" />
      <None Include="Assets\AssetStore\Knight\shaders\doublesidedshader.shader" />
