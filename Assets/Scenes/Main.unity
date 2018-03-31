@@ -5246,6 +5246,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_Calls:
 <<<<<<< HEAD
       - m_Target: {fileID: 2067630435}
@@ -5263,6 +5264,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+=======
+      m_Calls: []
+>>>>>>> parent of 59d52a5... Building Click
 =======
       m_Calls: []
 >>>>>>> parent of 59d52a5... Building Click
