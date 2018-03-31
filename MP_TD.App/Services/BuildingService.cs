@@ -10,5 +10,9 @@ namespace MP_TD.App.Services
 {
     public class BuildingService : BaseService<Building, BuildingDepot, int>
     {
+        public List<Building> GetAll()
+        {
+            return Depot.GetAll();
+        }
     }
 }
