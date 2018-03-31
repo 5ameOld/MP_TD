@@ -5,14 +5,15 @@ using System.Text;
 
 namespace MP_TD.Base
 {
-    public class BaseService<TEntity, TId>
+    public class BaseService<TEntity, TDepot, TId>
         where TEntity : BaseEntity<TId>
+        where TDepot : BaseDepot<TEntity, TId>, new()
     {
-        protected BaseDepot<TEntity, TId> Depot;
+        protected TDepot Depot;
 
         public BaseService()
         {
-            Depot = new BaseDepot<TEntity, TId>();
+            Depot = new TDepot();
         }
 
         public TEntity GetById(TId id)
