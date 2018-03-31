@@ -14,7 +14,6 @@ namespace MP_TD.Base
     {
         private const string connectionString = "Server=192.168.0.15; Port=3307; Database=TDM; Uid=TDM_User; Pwd=xh3OUidgofLBj4d8;";
 
-
         protected IDatabase Database;
         protected string TableName = typeof(TEntity).Name;
 
