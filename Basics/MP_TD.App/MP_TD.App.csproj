@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F55236D6-F919-420B-B042-030F56D73143}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MP_TD.App</RootNamespace>
+    <AssemblyName>MP_TD.App</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NPoco, Version=3.9.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPoco.3.9.3\lib\net35\NPoco.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Depots\AbilityDepot.cs" />
+    <Compile Include="Depots\BuildingDepot.cs" />
+    <Compile Include="Depots\BuildingTypeDepot.cs" />
+    <Compile Include="Depots\DamageTypeDepot.cs" />
+    <Compile Include="Depots\EffectDepot.cs" />
+    <Compile Include="Depots\RessourceDepot.cs" />
+    <Compile Include="Depots\UnitDepot.cs" />
+    <Compile Include="Depots\WorkerDepot.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\AbilityService.cs" />
+    <Compile Include="Services\BuildingService.cs" />
+    <Compile Include="Services\BuildingTypeService.cs" />
+    <Compile Include="Services\DamageTypeService.cs" />
+    <Compile Include="Services\EffectService.cs" />
+    <Compile Include="Services\RessourceService.cs" />
+    <Compile Include="Services\UnitService.cs" />
+    <Compile Include="Services\WorkerService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MP_TD.Base\MP_TD.Base.csproj">
+      <Project>{04b99a6e-6d54-4e09-9085-f70a48a78439}</Project>
+      <Name>MP_TD.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MP_TD.Shared\MP_TD.Shared.csproj">
+      <Project>{784479b1-989a-4bc3-9e9d-4159d6cafabb}</Project>
+      <Name>MP_TD.Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /s /y /R "$(TargetPath)" "$(SolutionDir)..\Assets\Plugins"
+xcopy /s /y /R "$(TargetDir)NPoco.dll" "$(SolutionDir)..\Assets\Plugins"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

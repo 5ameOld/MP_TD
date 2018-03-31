@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MP_TD", "MP_TD.csproj", "{520FB99A-30D1-C505-53AA-B052177175DF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MP_TD.Plugins", "MP_TD.Plugins.csproj", "{C9A2C255-E5B0-E2AF-8309-CA977D467F1E}"
@@ -8,12 +8,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MP_TD.Editor.Plugins", "MP_TD.Editor.Plugins.csproj", "{53E6CB1A-01E8-3398-EABE-9D460F31E53B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MP_TD.Editor", "MP_TD.Editor.csproj", "{92414C94-2B1D-0612-DF28-E5FC56A1038B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MP_TD.App", "MP_TD.App\MP_TD.App.csproj", "{F55236D6-F919-420B-B042-030F56D73143}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MP_TD.Base", "MP_TD.Base\MP_TD.Base.csproj", "{04B99A6E-6D54-4E09-9085-F70A48A78439}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MP_TD.Shared", "MP_TD.Shared\MP_TD.Shared.csproj", "{784479B1-989A-4BC3-9E9D-4159D6CAFABB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,18 +31,6 @@ Global
 		{92414C94-2B1D-0612-DF28-E5FC56A1038B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92414C94-2B1D-0612-DF28-E5FC56A1038B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92414C94-2B1D-0612-DF28-E5FC56A1038B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F55236D6-F919-420B-B042-030F56D73143}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F55236D6-F919-420B-B042-030F56D73143}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F55236D6-F919-420B-B042-030F56D73143}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F55236D6-F919-420B-B042-030F56D73143}.Release|Any CPU.Build.0 = Release|Any CPU
-		{04B99A6E-6D54-4E09-9085-F70A48A78439}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{04B99A6E-6D54-4E09-9085-F70A48A78439}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{04B99A6E-6D54-4E09-9085-F70A48A78439}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{04B99A6E-6D54-4E09-9085-F70A48A78439}.Release|Any CPU.Build.0 = Release|Any CPU
-		{784479B1-989A-4BC3-9E9D-4159D6CAFABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{784479B1-989A-4BC3-9E9D-4159D6CAFABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{784479B1-989A-4BC3-9E9D-4159D6CAFABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{784479B1-989A-4BC3-9E9D-4159D6CAFABB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
