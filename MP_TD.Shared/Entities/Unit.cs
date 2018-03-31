@@ -10,13 +10,16 @@ namespace MP_TD.Shared.Entities
         public string Name { get; set; }
         public decimal HitPoints { get; set; }
         public decimal Damage { get; set; }
-        public DamageType DamageType { get; set; }
-        public Effect Effect { get; set; }
+        public string DamageTypeId { get; set; }
+        public string EffectId { get; set; }
         public decimal Range { get; set; }
         public decimal Speed { get; set; }
-        public decimal Costs { get; set; }
+        public decimal? WoodCosts { get; set; }
+        public decimal? MetalCosts { get; set; }
+        public decimal? FoodCosts { get; set; }
         public decimal Armor { get; set; }
         public decimal Penetration { get; set; }
         public bool AttackTurrets { get; set; }
+        public string AbilityId { get; set; }
     }
 }
