@@ -9,9 +9,14 @@ namespace MP_TD.App.Depots
 {
     public class BuildingDepot : BaseDepot<Building, int>
     {
-        internal List<Building> GetAll()
+        public List<Building> GetAll()
         {
             return Database.Fetch<Building>(GetBaseSelectSql());
+        }
+
+        public List<Building> GetBuildable()
+        {
+            return Database.Fetch<Building>(GetBaseSelectSql().Where("BuildingTypeId != @HQ", new { HQ = "HQ" }));
         }
     }
 }

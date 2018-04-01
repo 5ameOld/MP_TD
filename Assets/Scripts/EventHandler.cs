@@ -32,10 +32,6 @@ class EventHandler : MonoBehaviour
                 {
                     handler.SetUI(hit.transform.tag);
                 }
-                else
-                {
-                    handler.RemoveUI();
-                }
             }
         }
     }

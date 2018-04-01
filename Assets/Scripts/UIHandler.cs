@@ -8,6 +8,7 @@ class UIHandler : MonoBehaviour
 {
     private GameObject UI;
     private Transform Canvas;
+    public GameObject ButtonPrefab;
 
     void Start()
     {

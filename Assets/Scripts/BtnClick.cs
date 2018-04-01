@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BtnClick : MonoBehaviour {
-    public GameObject BarracksPrefab;
-    GameObject BarracksGO;
+    public List<GameObject> Prefabs;
+    GameObject ObjectToAdd;
     Ray ray;
     RaycastHit hitInfo;
     bool newInstance = false;
@@ -19,15 +19,26 @@ public class BtnClick : MonoBehaviour {
         if (newInstance == false)
             return;
         CastRay();
-        BarracksGO.transform.position = hitInfo.point;
+        ObjectToAdd.transform.position = hitInfo.point;
         if (Input.GetMouseButton(0))
             newInstance = false;
 	}
 
-    public void BtnClicked()
+    public void WorkerBtnClicked()
+    {
+        CreateGameObject("Barracks");
+    }
+
+    public void MineBtnClicked()
+    {
+        CreateGameObject("Mine");
+    }
+
+    private void CreateGameObject(string prefAb)
     {
         CastRay();
-        BarracksGO = Instantiate(BarracksPrefab, hitInfo.point, Quaternion.Euler(-90, 0, 0));
+        var toAdd = Prefabs.Find(x => x.name == prefAb);
+        ObjectToAdd = Instantiate(toAdd, hitInfo.point, Quaternion.Euler(-90, 0, 0));
         newInstance = true;
     }
 

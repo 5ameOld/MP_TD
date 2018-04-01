@@ -14,5 +14,10 @@ namespace MP_TD.App.Services
         {
             return Depot.GetAll();
         }
+
+        public List<Building> GetBuildable()
+        {
+            return Depot.GetBuildable();
+        }
     }
 }
