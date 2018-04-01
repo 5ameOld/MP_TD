@@ -22,8 +22,13 @@ public class BtnClick : MonoBehaviour {
             return;
         CastRay();
         ObjectToAdd.transform.position = hitInfo.point;
+            Debug.Log(newInstance);
         if (Input.GetMouseButton(0))
+        {
+            //controller.CreateBuilding(ObjectToAdd.tag);
             newInstance = false;
+            Debug.Log(newInstance);
+        }
 	}
 
     public void WorkerBtnClicked()
@@ -42,7 +47,6 @@ public class BtnClick : MonoBehaviour {
         var toAdd = Prefabs.Find(x => x.name == prefAb);
         ObjectToAdd = Instantiate(toAdd, hitInfo.point, Quaternion.Euler(-90, 0, 0));
         newInstance = true;
-        controller.CreateBuilding(prefAb);
     }
 
     void CastRay()
