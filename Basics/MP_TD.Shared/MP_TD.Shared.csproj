@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Ability.cs" />
+    <Compile Include="Entities\BaseRessourceEntity.cs" />
     <Compile Include="Entities\Building.cs" />
     <Compile Include="Entities\BuildingRessources.cs" />
     <Compile Include="Entities\BuildingType.cs" />

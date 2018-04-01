@@ -14,5 +14,10 @@ namespace MP_TD.App.Services
         {
             
         }
+
+        public List<Unit> GetAll()
+        {
+            return Depot.GetAll();
+        }
     }
 }

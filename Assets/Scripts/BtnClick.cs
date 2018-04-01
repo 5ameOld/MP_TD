@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class BtnClick : MonoBehaviour {
     public List<GameObject> Prefabs;
+    public GameObject Player;
     GameObject ObjectToAdd;
     Ray ray;
     RaycastHit hitInfo;
     bool newInstance = false;
+    private PlayerController controller;
 
 	// Use this for initialization
 	void Start () {
-		
+        controller = Player.GetComponent<PlayerController>();
 	}
 	
 	// Update is called once per frame
@@ -40,6 +42,7 @@ public class BtnClick : MonoBehaviour {
         var toAdd = Prefabs.Find(x => x.name == prefAb);
         ObjectToAdd = Instantiate(toAdd, hitInfo.point, Quaternion.Euler(-90, 0, 0));
         newInstance = true;
+        controller.CreateBuilding(prefAb);
     }
 
     void CastRay()

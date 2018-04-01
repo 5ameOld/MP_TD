@@ -8,5 +8,9 @@ namespace MP_TD.App.Depots
 {
     public class UnitDepot : BaseDepot<Unit, int>
     {
+        public List<Unit> GetAll()
+        {
+            return Database.Fetch<Unit>(GetBaseSelectSql());
+        }
     }
 }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MP_TD.Shared.Entities
 {
-    public class Unit : BaseEntity<int>
+    public class Unit : BaseRessourceEntity<int>
     {
         public string Name { get; set; }
         public decimal HitPoints { get; set; }
@@ -14,9 +14,6 @@ namespace MP_TD.Shared.Entities
         public string EffectId { get; set; }
         public decimal Range { get; set; }
         public decimal Speed { get; set; }
-        public decimal? WoodCosts { get; set; }
-        public decimal? MetalCosts { get; set; }
-        public decimal? FoodCosts { get; set; }
         public decimal Armor { get; set; }
         public decimal Penetration { get; set; }
         public bool AttackTurrets { get; set; }
