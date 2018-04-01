@@ -8,6 +8,7 @@ TagManager:
   - UI
   - Panel
   - Mine
+  - Sawmill
   layers:
   - Default
   - TransparentFX

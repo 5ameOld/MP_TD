@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 64890089990366008}
   m_Layer: 0
   m_Name: Sawmill
-  m_TagString: Untagged
+  m_TagString: Sawmill
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295

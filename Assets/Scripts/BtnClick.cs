@@ -19,15 +19,15 @@ public class BtnClick : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         if (newInstance == false)
+        {
             return;
+        }
         CastRay();
         ObjectToAdd.transform.position = hitInfo.point;
-            Debug.Log(newInstance);
         if (Input.GetMouseButton(0))
         {
-            //controller.CreateBuilding(ObjectToAdd.tag);
+            controller.CreateBuilding(ObjectToAdd.tag);
             newInstance = false;
-            Debug.Log(newInstance);
         }
 	}
 
@@ -39,6 +39,11 @@ public class BtnClick : MonoBehaviour {
     public void MineBtnClicked()
     {
         CreateGameObject("Mine");
+    }
+
+    public void SawmillBtnClicked()
+    {
+        CreateGameObject("Sawmill");
     }
 
     private void CreateGameObject(string prefAb)

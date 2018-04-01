@@ -1,5 +1,6 @@
 ﻿using MP_TD.App.Services;
 using MP_TD.Shared.Entities;
+using MP_TD.Shared.Views;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,11 +19,13 @@ public class PlayerController : MonoBehaviour {
 
     private List<Building> buildings;
     private List<Unit> units;
+    private List<BuildingView> placedBuildings;
 
     // Use this for initialization
     void Start () {
         buildingService = new BuildingService();
         unitService = new UnitService();
+        placedBuildings = new List<BuildingView>();
 
         WoodRessource = 500;
         MetalRessource = 500;
@@ -32,21 +35,22 @@ public class PlayerController : MonoBehaviour {
 
         buildings = buildingService.GetBuildable();
         units = unitService.GetAll();
+
+        InvokeRepeating("AddRessources", 1, 1);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        Building building = buildings.Find(x => x.Name == "Mine");
-        Button mine = UIButtons.Find(x => x.name == "MineBtn");
-
-        mine.interactable = (building.MetalCosts <= MetalRessource && building.FoodCosts <= FoodRessource && building.WoodCosts <= WoodRessource);
+        SetButtonInteractionable("Mine");
+        SetButtonInteractionable("Sawmill");
 
         RessourceInfo.text = DisplayRessources();
-	}
+    }
 
     public void CreateBuilding(string name)
     {
         Building building = buildings.Find(x => x.Name == name);
+        placedBuildings.Add(buildingService.GetViewById(building.Id));
         CalculateRemainingRessources(building);
     }
 
@@ -60,5 +64,28 @@ public class PlayerController : MonoBehaviour {
         WoodRessource -= entity.WoodCosts;
         FoodRessource -= entity.FoodCosts;
         MetalRessource -= entity.MetalCosts;
+    }
+
+    private void AddRessources()
+    {
+        foreach(var building in placedBuildings)
+        {
+            if(building.RessourceId == "Metal")
+            {
+                MetalRessource += building.UnitsPerStep;
+            }
+
+            if(building.RessourceId == "Wood")
+            {
+                WoodRessource += building.UnitsPerStep;
+            }
+        }
+    }
+
+    private void SetButtonInteractionable(string name)
+    {
+        Building building = buildings.Find(x => x.Name == name);
+        Button btn = UIButtons.Find(x => x.name == name + "Btn");
+        btn.interactable = (building.MetalCosts <= MetalRessource && building.FoodCosts <= FoodRessource && building.WoodCosts <= WoodRessource);
     }
 }
