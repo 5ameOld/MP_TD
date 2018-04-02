@@ -31,7 +31,7 @@ public class BtnClick : MonoBehaviour {
         }
 	}
 
-    public void WorkerBtnClicked()
+    public void BarracksBtnClicked()
     {
         CreateGameObject("Barracks");
     }
@@ -44,6 +44,16 @@ public class BtnClick : MonoBehaviour {
     public void SawmillBtnClicked()
     {
         CreateGameObject("Sawmill");
+    }
+
+    public void Mill_BackeryBtnClicked()
+    {
+        CreateGameObject("Mill_Backery");
+    }
+
+    public void WorkerBtnClicked()
+    {
+
     }
 
     private void CreateGameObject(string prefAb)

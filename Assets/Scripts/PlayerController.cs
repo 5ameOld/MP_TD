@@ -43,6 +43,7 @@ public class PlayerController : MonoBehaviour {
 	void Update () {
         SetButtonInteractionable("Mine");
         SetButtonInteractionable("Sawmill");
+        SetButtonInteractionable("Mill_Backery");
 
         RessourceInfo.text = DisplayRessources();
     }
@@ -50,7 +51,10 @@ public class PlayerController : MonoBehaviour {
     public void CreateBuilding(string name)
     {
         Building building = buildings.Find(x => x.Name == name);
-        placedBuildings.Add(buildingService.GetViewById(building.Id));
+        if (building.BuildingTypeId == "Production")
+        {
+            placedBuildings.Add(buildingService.GetViewById(building.Id));
+        }
         CalculateRemainingRessources(building);
     }
 
@@ -78,6 +82,11 @@ public class PlayerController : MonoBehaviour {
             if(building.RessourceId == "Wood")
             {
                 WoodRessource += building.UnitsPerStep;
+            }
+
+            if(building.RessourceId == "Food")
+            {
+                FoodRessource += building.UnitsPerStep;
             }
         }
     }

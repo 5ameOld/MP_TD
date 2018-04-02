@@ -9,6 +9,8 @@ TagManager:
   - Panel
   - Mine
   - Sawmill
+  - Mill_Backery
+  - Barracks
   layers:
   - Default
   - TransparentFX
