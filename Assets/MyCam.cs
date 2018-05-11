@@ -37,5 +37,17 @@ public class MyCam : MonoBehaviour {
             v.z = v.z - cameraSpeed;
             transform.position = v;
         }
+        if (Input.GetAxis("Mouse ScrollWheel") < 0)
+        {
+            Vector3 v = transform.position;
+            v.y = v.y + cameraSpeed;
+            transform.position = v;
+        }
+        if(Input.GetAxis("Mouse ScrollWheel") > 0)
+        {
+            Vector3 v = transform.position;
+            v.y = v.y - cameraSpeed;
+            transform.position = v;
+        }
     }
 }
