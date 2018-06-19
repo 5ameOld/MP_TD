@@ -1092,7 +1092,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &202572000
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2521,7 +2521,7 @@ Terrain:
   m_TreeDistance: 2000
   m_TreeBillboardDistance: 2000
   m_TreeCrossFadeLength: 200
-  m_TreeMaximumFullLODCount: 50
+  m_TreeMaximumFullLODCount: 10000
   m_DetailObjectDistance: 250
   m_DetailObjectDensity: 1
   m_HeightmapPixelError: 5
@@ -4294,15 +4294,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4362480584434024, guid: 92048b37840203644bf6c83be6d07b3a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 523.8226
+      value: 524.32
       objectReference: {fileID: 0}
     - target: {fileID: 4362480584434024, guid: 92048b37840203644bf6c83be6d07b3a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 50.41913
+      value: 53.1
       objectReference: {fileID: 0}
     - target: {fileID: 4362480584434024, guid: 92048b37840203644bf6c83be6d07b3a, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 507.93555
+      value: 504.86
       objectReference: {fileID: 0}
     - target: {fileID: 4362480584434024, guid: 92048b37840203644bf6c83be6d07b3a, type: 2}
       propertyPath: m_LocalRotation.x
@@ -4322,10 +4322,6 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4362480584434024, guid: 92048b37840203644bf6c83be6d07b3a, type: 2}
       propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1538969306122338, guid: 92048b37840203644bf6c83be6d07b3a, type: 2}
-      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
