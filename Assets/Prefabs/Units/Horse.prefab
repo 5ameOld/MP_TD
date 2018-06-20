@@ -1107,7 +1107,7 @@ Transform:
   m_GameObject: {fileID: 1066824757429438}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 129.45036, y: 50, z: 111.608215}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4424436413399264}
   - {fileID: 4131458282294620}
@@ -1363,7 +1363,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!137 &137797639481035168
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -1377,7 +1376,6 @@ SkinnedMeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: a432b82830b61dd439c932daaf8f4b91, type: 2}
   m_StaticBatchInfo:
