@@ -41,10 +41,11 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        /*D'Function git en NullReferenceException Error use bi de Zeile 97. Ich vermuete, dass d' buildings Liste leer isch. Aber ich d'schegg de code dehinder ned..
         SetButtonInteractionable("Mine");
         SetButtonInteractionable("Sawmill");
         SetButtonInteractionable("Mill_Backery");
-
+        */
         RessourceInfo.text = DisplayRessources();
     }
 
